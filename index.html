@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Random Flashcard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .flashcard {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="flashcard" id="flashcard">Loading...</div>
+
+    <script>
+        // Array of flashcards
+        const flashcards = [
+            'Flashcard Content 1',
+            'Flashcard Content 2',
+            'Flashcard Content 3',
+            'Flashcard Content 4',
+            'Flashcard Content 5',
+            'Flashcard Content 6',
+            'Flashcard Content 7',
+            'Flashcard Content 8',
+            'Flashcard Content 9',
+            'Flashcard Content 10',
+            'Flashcard Content 11',
+            'Flashcard Content 12',
+            'Flashcard Content 13',
+            'Flashcard Content 14',
+            'Flashcard Content 15',
+            'Flashcard Content 16',
+            'Flashcard Content 17',
+            // Add more flashcard contents here
+            'Flashcard Content N'
+        ];
+
+        // Function to get today's date in YYYY-MM-DD format
+        function getTodayDate() {
+            const today = new Date();
+            return today.toISOString().split('T')[0];
+        }
+
+        // Function to display a random flashcard, only changing once per day
+        function displayDailyRandomFlashcard() {
+            const todayDate = getTodayDate();
+            let todaysFlashcard = localStorage.getItem('dailyFlashcard');
+            let storedDate = localStorage.getItem('flashcardDate');
+
+            // Check if the stored date is today's date
+            if (storedDate === todayDate) {
+                // Display the stored flashcard
+                document.getElementById('flashcard').textContent = todaysFlashcard;
+            } else {
+                // Select a new random flashcard and store it with today's date
+                const randomIndex = Math.floor(Math.random() * flashcards.length);
+                todaysFlashcard = flashcards[randomIndex];
+                localStorage.setItem('dailyFlashcard', todaysFlashcard);
+                localStorage.setItem('flashcardDate', todayDate);
+                document.getElementById('flashcard').textContent = todaysFlashcard;
+            }
+        }
+
+        // Display the flashcard when the page loads
+        window.onload = displayDailyRandomFlashcard;
+    </script>
+</body>
+</html>
