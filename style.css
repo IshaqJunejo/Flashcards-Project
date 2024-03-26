@@ -1,0 +1,67 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #222;
+    color: #eee;
+}
+
+.flashcard-container .flashcard
+{
+    width: 324px;
+    height: 524px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #444;
+}
+
+.flashcard-container .hidden
+{
+    display: none;
+}
+
+.dots-container
+{
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.dots-container .left-arrow
+{
+    width: 30px;
+    height: 20px;
+    background: #fff;
+}
+
+.dots-container .right-arrow
+{
+    width: 30px;
+    height: 20px;
+    background: #fff;
+}
+
+.dots-container .dot
+{
+    width: 30px;
+    height: 30px;
+    margin: 12px;
+    border-radius: 50%;
+    border: #eee 2px solid;
+}
+
+.dots-container .active
+{
+    background: #eee;
+}
