@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
     <title>Daily Deutsch Flashcard</title>
 </head>
@@ -11,35 +12,69 @@
     <h2>Deutsch Flashcards</h2>
     <div class="flashcard-container">
         <div class="flashcard" id="flashcard-1">
-            <p class="content">Loading ...</p>
-            <p class="translate">Loading ...</p>
+            <div class="top">
+                <p class="top-content">Today's Noun is</p>
+                <p class="top-translate">It means</p>
+            </div>
+            <div class="card-word">
+                <p class="content">Loading ...</p>
+                <p class="translate">Loading ...</p>
+            </div>
         </div>
         <div class="flashcard" id="flashcard-2">
-            <p class="content">Loading ...</p>
-            <p class="translate">Loading ...</p>
+            <div class="top">
+                <p class="top-content">Today's Verb is</p>
+                <p class="top-translate">It means</p>
+            </div>
+            <div class="card-word">
+                <p class="content">Loading ...</p>
+                <p class="translate">Loading ...</p>
+            </div>
         </div>
         <div class="flashcard" id="flashcard-3">
-            <p class="content">Loading ...</p>
-            <p class="translate">Loading ...</p>
+            <div class="top">
+                <p class="top-content">Today's Adjective is</p>
+                <p class="top-translate">It means</p>
+            </div>
+            <div class="card-word">
+                <p class="content">Loading ...</p>
+                <p class="translate">Loading ...</p>
+            </div>
         </div>
         <div class="flashcard" id="flashcard-4">
-            <p class="content">Loading ...</p>
-            <p class="translate">Loading ...</p>
+            <div class="top">
+                <p class="top-content">Today's Family Member is</p>
+                <p class="top-translate">It means</p>
+            </div>
+            <div class="card-word">
+                <p class="content">Loading ...</p>
+                <p class="translate">Loading ...</p>
+            </div>
         </div>
         <div class="flashcard" id="flashcard-5">
-            <p class="content">Loading ...</p>
-            <p class="translate">Loading ...</p>
+            <div class="top">
+                <p class="top-content">Today's Phrase is</p>
+                <p class="top-translate">It means</p>
+            </div>
+            <div class="card-word">
+                <p class="content">Loading ...</p>
+                <p class="translate">Loading ...</p>
+            </div>
         </div>
     </div>
 
     <div class="dots-container">
-        <div class="left-arrow" onclick="moveLeft()"></div>
+        <div class="left-arrow" onclick="moveLeft()">
+            <i class="material-icons">arrow_back</i>
+        </div>
         <div class="dot active"></div>
         <div class="dot"></div>
         <div class="dot"></div>
         <div class="dot"></div>
         <div class="dot"></div>
-        <div class="right-arrow" onclick="moveRight()"></div>
+        <div class="right-arrow" onclick="moveRight()">
+            <i class="material-icons">arrow_forward</i>
+        </div>
     </div>
 
     <script src="script.js"></script>
