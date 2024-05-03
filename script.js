@@ -213,6 +213,12 @@ dotsArray = document.querySelectorAll(".dot");
 flashcardArray = document.querySelectorAll(".flashcard");
 activeIndex = 0;
 
+const placesKeys = Object.keys(places);
+const verbsKeys = Object.keys(verbs);
+const adjectivesKeys = Object.keys(adjectives);
+const foodsKeys = Object.keys(foods);
+const phrasesKeys = Object.keys(phrases);
+
 // Running the Update Function Initially
 update();
 
@@ -238,50 +244,50 @@ function displayDailyRandomFlashcard()
     if (storedDate === todayDate)
     {
         // Display the stored flashcard
-        let index1 = localStorage.getItem('dailyFlashcard-1');
-        let index2 = localStorage.getItem('dailyFlashcard-2');
-        let index3 = localStorage.getItem('dailyFlashcard-3');
-        let index4 = localStorage.getItem('dailyFlashcard-4');
-        let index5 = localStorage.getItem('dailyFlashcard-5');
-        document.querySelector("#flashcard-1").querySelector(".content").textContent = nouns_de[index1];
-        document.querySelector("#flashcard-1").querySelector(".translate").textContent = nouns_en[index1];
-        document.querySelector("#flashcard-2").querySelector(".content").textContent = verbs_de[index2];
-        document.querySelector("#flashcard-2").querySelector(".translate").textContent = verbs_en[index2];
-        document.querySelector("#flashcard-3").querySelector(".content").textContent = adjective_de[index3];
-        document.querySelector("#flashcard-3").querySelector(".translate").textContent = adjective_en[index3];
-        document.querySelector("#flashcard-4").querySelector(".content").textContent = family_de[index4];
-        document.querySelector("#flashcard-4").querySelector(".translate").textContent = family_en[index4];
-        document.querySelector("#flashcard-5").querySelector(".content").textContent = phrases_de[index5];
-        document.querySelector("#flashcard-5").querySelector(".translate").textContent = phrases_en[index5];
+        let key1 = localStorage.getItem('dailyFlashcard-1');
+        let key2 = localStorage.getItem('dailyFlashcard-2');
+        let key3 = localStorage.getItem('dailyFlashcard-3');
+        let key4 = localStorage.getItem('dailyFlashcard-4');
+        let key5 = localStorage.getItem('dailyFlashcard-5');
+        document.querySelector("#flashcard-1").querySelector(".content").textContent = key1;
+        document.querySelector("#flashcard-1").querySelector(".translate").textContent = places[key1];
+        document.querySelector("#flashcard-2").querySelector(".content").textContent = key2;
+        document.querySelector("#flashcard-2").querySelector(".translate").textContent = verbs[key2];
+        document.querySelector("#flashcard-3").querySelector(".content").textContent = key3;
+        document.querySelector("#flashcard-3").querySelector(".translate").textContent = adjectives[key3];
+        document.querySelector("#flashcard-4").querySelector(".content").textContent = key4;
+        document.querySelector("#flashcard-4").querySelector(".translate").textContent = foods[key4];
+        document.querySelector("#flashcard-5").querySelector(".content").textContent = key5;
+        document.querySelector("#flashcard-5").querySelector(".translate").textContent = phrases[key5];
     } else
     {
         // Select a new random flashcard and store it with today's date
-        const cardIndex1 = Math.floor(Math.random() * nouns_de.length);
-        const cardIndex2 = Math.floor(Math.random() * verbs_de.length);
-        const cardIndex3 = Math.floor(Math.random() * adjective_de.length);
-        const cardIndex4 = Math.floor(Math.random() * family_de.length);
-        const cardIndex5 = Math.floor(Math.random() * phrases_de.length);
+        const cardKey1 = placesKeys[Math.floor(Math.random() * placesKeys.length)];
+        const cardKey2 = verbsKeys[Math.floor(Math.random() * verbsKeys.length)];
+        const cardKey3 = adjectivesKeys[Math.floor(Math.random() * adjectivesKeys.length)];
+        const cardKey4 = foodsKeys[Math.floor(Math.random() * foodsKeys.length)];
+        const cardKey5 = phrasesKeys[Math.floor(Math.random() * phrasesKeys.length)];
         //todaysFlashcard1 = nouns_de[randomIndex1];
         //todaysFlashcard2 = verbs_de[randomIndex2];
         //todaysFlashcard3 = adjective_de[randomIndex3];
         //todaysFlashcard4 = nouns_de[randomIndex4];
         //todaysFlashcard5 = phrases_de[randomIndex5];
-        localStorage.setItem('dailyFlashcard-1', cardIndex1);
-        localStorage.setItem('dailyFlashcard-2', cardIndex2);
-        localStorage.setItem('dailyFlashcard-3', cardIndex3);
-        localStorage.setItem('dailyFlashcard-4', cardIndex4);
-        localStorage.setItem('dailyFlashcard-5', cardIndex5);
+        localStorage.setItem('dailyFlashcard-1', cardKey1);
+        localStorage.setItem('dailyFlashcard-2', cardKey2);
+        localStorage.setItem('dailyFlashcard-3', cardKey3);
+        localStorage.setItem('dailyFlashcard-4', cardKey4);
+        localStorage.setItem('dailyFlashcard-5', cardKey5);
         localStorage.setItem('flashcardDate', todayDate);
-        document.querySelector("#flashcard-1").querySelector(".content").textContent = nouns_de[cardIndex1];
-        document.querySelector("#flashcard-1").querySelector(".translate").textContent = nouns_en[cardIndex1];
-        document.querySelector("#flashcard-2").querySelector(".content").textContent = verbs_de[cardIndex2];
-        document.querySelector("#flashcard-2").querySelector(".translate").textContent = verbs_en[cardIndex2];
-        document.querySelector("#flashcard-3").querySelector(".content").textContent = adjective_de[cardIndex3];
-        document.querySelector("#flashcard-3").querySelector(".translate").textContent = adjective_en[cardIndex3];
-        document.querySelector("#flashcard-4").querySelector(".content").textContent = family_de[cardIndex4];
-        document.querySelector("#flashcard-4").querySelector(".translate").textContent = family_en[cardIndex4];
-        document.querySelector("#flashcard-5").querySelector(".content").textContent = phrases_de[cardIndex5];
-        document.querySelector("#flashcard-5").querySelector(".translate").textContent = phrases_en[cardIndex5];
+        document.querySelector("#flashcard-1").querySelector(".content").textContent = cardKey1;
+        document.querySelector("#flashcard-1").querySelector(".translate").textContent = places[cardKey1];
+        document.querySelector("#flashcard-2").querySelector(".content").textContent = cardKey2;
+        document.querySelector("#flashcard-2").querySelector(".translate").textContent = verbs[cardKey2];
+        document.querySelector("#flashcard-3").querySelector(".content").textContent = cardKey3;
+        document.querySelector("#flashcard-3").querySelector(".translate").textContent = adjectives[cardKey3];
+        document.querySelector("#flashcard-4").querySelector(".content").textContent = cardKey4;
+        document.querySelector("#flashcard-4").querySelector(".translate").textContent = foods[cardKey4];
+        document.querySelector("#flashcard-5").querySelector(".content").textContent = cardKey5;
+        document.querySelector("#flashcard-5").querySelector(".translate").textContent = phrases[cardKey5];
     }
 }
 
