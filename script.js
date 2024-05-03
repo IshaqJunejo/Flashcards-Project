@@ -138,6 +138,77 @@ const phrases_en = [
     ""
 ];
 
+const places = {
+    "Schlafzimmer": "Bedroom",
+    "Badezimmer": "Bathroom",
+    "Bahnhof": "Railway Station",
+    "U-Bahnstation": "Subway Station",
+    "München": "Munich",
+    "Wien": "Vienna",
+    "Österreich": "Austria",
+    "Frankreich": "France",
+    "Amerika": "America",
+    "Deutschland": "Germany",
+    "Kanada": "Canada",
+    "Stadt": "City"
+}
+
+const verbs = {
+    "Schwimmen": "Swimming",
+    "Wandern": "Hiking",
+    "Spielen": "Playing",
+    "Gehen": "Going",
+    "Kochen": "Cooking"
+}
+
+const adjectives = {
+    "Groß": "Big",
+    "Klein": "Small",
+    "Hell": "Bright",
+    "Sauber": "Clean",
+    "Schnell": "Quick",
+    "Krank": "Sick",
+    "Nett": "Nice",
+    "Klug": "Smart",
+    "Kalt": "Cold",
+    "Neue": "New",
+    "Alt": "Old"
+}
+
+const foods = {
+    "Hänchen": "Chicken",
+    "Wasser": "Water",
+    "Wein": "Wine",
+    "Bier": "Beer",
+    "Milch": "Milk",
+    "Rotwein": "Red Wine",
+    "Wurst": "Sausage",
+    "Kartoffeln": "Potatoes",
+    "Apfel": "Apple",
+    "Kuchen": "Cake",
+    "Essen": "Food",
+    "Käse": "Cheese"
+}
+
+const phrases = {
+    "Ich Freue mich!": "I am Looking Forward!",
+    "Es tut mir leid!": "I am Sorry!",
+    "Ich Liebe Dich!": "I Love You!",
+    "Danke!": "Thank You",
+    "Vielen Dank!": "Thank A Lot!",
+    "Bitte!": "Please!",
+    "Gern Gescheen": "You're Welcome!",
+    "Wie Geht's?": "How are you?",
+    "Bis Bald!": "See you Soon!",
+    "Bis Spater!": "See you Later!",
+    "Tschuss!": "Bye!",
+    "Auf Wiedersehen!": "Good Bye!",
+    "Guten Tag!": "Good Day!",
+    "Guten Morgen!": "Good Morning!",
+    "Guten Abend!": "Good Evening!",
+    "Entschuldigung!": "Excuse Me!"
+}
+
 dotsArray = document.querySelectorAll(".dot");
 flashcardArray = document.querySelectorAll(".flashcard");
 activeIndex = 0;
