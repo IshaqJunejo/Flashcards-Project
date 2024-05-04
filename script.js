@@ -1,143 +1,4 @@
-// Array of flashcards
-const nouns_de = [
-    "Schalfzimmer",
-    "Buch",
-    "Badezimmer",
-    "Bahnhof",
-    "U-Bahnstation",
-    ""
-];
-
-const nouns_en = [
-    "Bedromm",
-    "Book",
-    "Bathroom",
-    "Train Station",
-    "Subway Station",
-    ""
-];
-
-const verbs_de = [
-    "Schwimmen",
-    "Wandern",
-    "Spielen",
-    "Gehen",
-    "Kochen",
-    ""
-];
-
-const verbs_en = [
-    "Swimming",
-    "Hiking",
-    "Playing",
-    "Going",
-    "Cooking",
-    ""
-];
-
-const adjective_de = [
-    "Gros",
-    "Klein",
-    "Hell",
-    "Sauber",
-    "Schnell",
-    "Krank",
-    "Nett",
-    "Klug",
-    "Kalt",
-    "Neue",
-    "Alt",
-    ""
-];
-
-
-const adjective_en = [
-    "Big",
-    "Small",
-    "Bright",
-    "Clean",
-    "Quick",
-    "Sick",
-    "Nice",
-    "Smart",
-    "Cold",
-    "New",
-    "Old",
-    ""
-];
-
-const family_de = [
-    "Bruder",
-    "Schwester",
-    "Sohn",
-    "Tochter",
-    "Vater",
-    "Mutter",
-    "Mann",
-    "Frau",
-    "Opa",
-    "Oma",
-    "Onkel",
-    "Tante",
-    ""
-];
-
-const family_en = [
-    "Brother",
-    "Sister",
-    "Son",
-    "Daughter",
-    "Father",
-    "Mother",
-    "Husband",
-    "Wife",
-    "Grandpa",
-    "Grandma",
-    "Uncle",
-    "Aunt",
-    ""
-]
-
-const phrases_de = [
-    "Ich Freue mich!",
-    "Es tut mir leid!",
-    "Ich Liebe Dich!",
-    "Danke!",
-    "Vielen Dank!",
-    "Bitte!",
-    "Gern Gescheen!",
-    "Wie Geht's!",
-    "Bis Bald!",
-    "Bis Spater!",
-    "Tschuss!",
-    "Auf Wiedersehen!",
-    "Guten Morgen!",
-    "Guten Tag!",
-    "Guten Abend!",
-    "Entschuldigung!",
-    ""
-];
-
-const phrases_en = [
-    "I am Looking Forward!",
-    "I am Sorry!",
-    "I Love You!",
-    "Thank You",
-    "Thanks A Lot!",
-    "Please!",
-    "You're Welcome!",
-    "How are you!",
-    "See you Soon!",
-    "See you Later!",
-    "Bye!",
-    "Good Bye!",
-    "Good Morning!",
-    "Good Day!",
-    "Good Evening!",
-    "Excuse Me!",
-    ""
-];
-
+// Dictionary for Collection of Places
 const places = {
     "Schlafzimmer": "Bedroom",
     "Badezimmer": "Bathroom",
@@ -153,6 +14,7 @@ const places = {
     "Stadt": "City"
 }
 
+// Dictionary for Collection of Verbs
 const verbs = {
     "Schwimmen": "Swimming",
     "Wandern": "Hiking",
@@ -161,6 +23,7 @@ const verbs = {
     "Kochen": "Cooking"
 }
 
+// Dictionary for Collection of Adjectives
 const adjectives = {
     "Groß": "Big",
     "Klein": "Small",
@@ -175,6 +38,7 @@ const adjectives = {
     "Alt": "Old"
 }
 
+// Dictionary for Collection of Food / Drinking Items
 const foods = {
     "Hänchen": "Chicken",
     "Wasser": "Water",
@@ -190,6 +54,7 @@ const foods = {
     "Käse": "Cheese"
 }
 
+// Dictionary for Collection of Phrases
 const phrases = {
     "Ich Freue mich!": "I am Looking Forward!",
     "Es tut mir leid!": "I am Sorry!",
@@ -209,10 +74,12 @@ const phrases = {
     "Entschuldigung!": "Excuse Me!"
 }
 
+// HTML Elements
 dotsArray = document.querySelectorAll(".dot");
 flashcardArray = document.querySelectorAll(".flashcard");
 activeIndex = 0;
 
+// Keys of all Dictionaries
 const placesKeys = Object.keys(places);
 const verbsKeys = Object.keys(verbs);
 const adjectivesKeys = Object.keys(adjectives);
@@ -233,11 +100,6 @@ function getTodayDate()
 function displayDailyRandomFlashcard()
 {
     const todayDate = getTodayDate();
-    //let todaysFlashcard1 = localStorage.getItem('dailyFlashcard-1');
-    //let todaysFlashcard2 = localStorage.getItem('dailyFlashcard-2');
-    //let todaysFlashcard3 = localStorage.getItem('dailyFlashcard-3');
-    //let todaysFlashcard4 = localStorage.getItem('dailyFlashcard-4');
-    //let todaysFlashcard5 = localStorage.getItem('dailyFlashcard-5');
     let storedDate = localStorage.getItem('flashcardDate');
 
     // Check if the stored date is today's date
@@ -249,6 +111,7 @@ function displayDailyRandomFlashcard()
         let key3 = localStorage.getItem('dailyFlashcard-3');
         let key4 = localStorage.getItem('dailyFlashcard-4');
         let key5 = localStorage.getItem('dailyFlashcard-5');
+
         document.querySelector("#flashcard-1").querySelector(".content").textContent = key1;
         document.querySelector("#flashcard-1").querySelector(".translate").textContent = places[key1];
         document.querySelector("#flashcard-2").querySelector(".content").textContent = key2;
@@ -267,11 +130,7 @@ function displayDailyRandomFlashcard()
         const cardKey3 = adjectivesKeys[Math.floor(Math.random() * adjectivesKeys.length)];
         const cardKey4 = foodsKeys[Math.floor(Math.random() * foodsKeys.length)];
         const cardKey5 = phrasesKeys[Math.floor(Math.random() * phrasesKeys.length)];
-        //todaysFlashcard1 = nouns_de[randomIndex1];
-        //todaysFlashcard2 = verbs_de[randomIndex2];
-        //todaysFlashcard3 = adjective_de[randomIndex3];
-        //todaysFlashcard4 = nouns_de[randomIndex4];
-        //todaysFlashcard5 = phrases_de[randomIndex5];
+        
         localStorage.setItem('dailyFlashcard-1', cardKey1);
         localStorage.setItem('dailyFlashcard-2', cardKey2);
         localStorage.setItem('dailyFlashcard-3', cardKey3);
