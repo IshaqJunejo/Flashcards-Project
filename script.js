@@ -20,7 +20,10 @@ const verbs = {
     "Wandern": "Hiking",
     "Spielen": "Playing",
     "Gehen": "Going",
-    "Kochen": "Cooking"
+    "Kochen": "Cooking",
+    "Zahlen": "Paying",
+    "Arbeiten": "Working",
+    "Fahren": "Riding"
 }
 
 // Dictionary for Collection of Adjectives
@@ -35,7 +38,10 @@ const adjectives = {
     "Klug": "Smart",
     "Kalt": "Cold",
     "Neue": "New",
-    "Alt": "Old"
+    "Alt": "Old",
+    "Teuer": "Expensive",
+    "Billig": "Cheap",
+    "Heiß": "Hot"
 }
 
 // Dictionary for Collection of Food / Drinking Items
@@ -48,10 +54,16 @@ const foods = {
     "Rotwein": "Red Wine",
     "Wurst": "Sausage",
     "Kartoffeln": "Potatoes",
-    "Apfel": "Apple",
+    "Äpfel": "Apples",
     "Kuchen": "Cake",
     "Essen": "Food",
-    "Käse": "Cheese"
+    "Käse": "Cheese",
+    "Bananen": "Bananas",
+    "Wassermelone": "Watermelon",
+    "Brot": "Bread",
+    "Frühstück": "Breakfast",
+    "Mittagessen": "Lunch",
+    "Abendessen": "Dinner",
 }
 
 // Dictionary for Collection of Phrases
@@ -71,7 +83,26 @@ const phrases = {
     "Guten Tag!": "Good Day!",
     "Guten Morgen!": "Good Morning!",
     "Guten Abend!": "Good Evening!",
-    "Entschuldigung!": "Excuse Me!"
+    "Entschuldigung!": "Excuse Me!",
+    "Wie geht es Ihnen?": "How are you? (formal)",
+    "Mir geth es gut, Danke!": "I am fine, Thank you!",
+    "Gute Nacht!": "Good Night!",
+    "Sprechen Sie Einglisch?": "Do you speak English?",
+    "Ich Brauche Hilfe": "I Need Help",
+    "Wie heißen Sie?": "What is your Name?",
+    "Ich Heiße ...": "My Name is ...",
+    "Wie Alt Sind Sie?": "How Old are you? (formal)",
+    "Wie Alt bist du?": "How Old are you? (informal)",
+    "Was Machen Sie?": "What do you do for Work?",
+    "Verstehen Sie?": "Do you Understand? (formal)",
+    "Ich verstehe nicht": "I don't Understand",
+    "Ich Suche ...": "I am looking for ...",
+    "Wie viel kostet ...?": "How much does ... cost?",
+    "Was möchten Sie?": "What would you like?",
+    "Ich möchte ... kaufen": "I would like to buy ...",
+    "Kann ich bar bezahlen?": "Can I pay with Cash?",
+    "Kann ich mit Kreditkarte bezahlen?": "Can I pay with Credit Card?",
+    "Guten Appetit!": "Enjoy Your Meal!"
 }
 
 // HTML Elements
