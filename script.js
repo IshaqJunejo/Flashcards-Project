@@ -11,7 +11,18 @@ const places = {
     "Amerika": "America",
     "Deutschland": "Germany",
     "Kanada": "Canada",
-    "Stadt": "City"
+    "Stadt": "City",
+    "Bibliotheke": "Library",
+    "Apotheke": "Pharmacy",
+    "Kino": "Cinema",
+    "Bäckeria": "Bakery",
+    "Reisezentrum": "Travel Center",
+    "Stadtzentrum": "City Center",
+    "Stadtmuseum": "City Museum",
+    "Kaufhause": "Department Store",
+    "Markt": "Market",
+    "Supermarkt": "Super Market",
+    "Marktplatz": "Market Place"
 }
 
 // Dictionary for Collection of Verbs
@@ -23,7 +34,24 @@ const verbs = {
     "Kochen": "Cooking",
     "Zahlen": "Paying",
     "Arbeiten": "Working",
-    "Fahren": "Riding"
+    "Fahren": "Riding",
+    "Suchen": "Searching",
+    "Resen": "Traveling",
+    "Besuchen": "Visit",
+    "Kaufen": "Buying",
+    "Springen": "Jumping",
+    "Tanzen": "Dancing",
+    "Ankommen": "Arriving",
+    "Läuft": "Running",
+    "Bringen": "Bringing",
+    "Schreiben": "Writing",
+    "Denken": "Thinking",
+    "Versuchen": "Trying",
+    "Akzeptieren": "Accepting",
+    "Fragen": "Asking",
+    "Werden": "Becoming",
+    "Bauen": "To Build",
+    "Wissen": "Knowing"
 }
 
 // Dictionary for Collection of Adjectives
@@ -41,7 +69,8 @@ const adjectives = {
     "Alt": "Old",
     "Teuer": "Expensive",
     "Billig": "Cheap",
-    "Heiß": "Hot"
+    "Heiß": "Hot",
+    "Einfach": "Easy"
 }
 
 // Dictionary for Collection of Food / Drinking Items

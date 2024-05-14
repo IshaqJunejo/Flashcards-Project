@@ -20,7 +20,7 @@ h2
 .flashcard-container .flashcard
 {
     width: 324px;
-    height: 538px;
+    height: 484px;
     margin: 18px auto;
     border-radius: 12px;
     display: flex;
@@ -71,6 +71,7 @@ h2
 .flashcard-container .flashcard .card-word
 {
     position: absolute;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
