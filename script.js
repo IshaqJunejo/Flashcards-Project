@@ -22,7 +22,14 @@ const places = {
     "Kaufhause": "Department Store",
     "Markt": "Market",
     "Supermarkt": "Super Market",
-    "Marktplatz": "Market Place"
+    "Marktplatz": "Market Place",
+    "Krankenhaus": "Hospital",
+    "Bauernhof": "Farm",
+    "Büro": "Office",
+    "Kirche": "Church",
+    "Hügel": "Hill",
+    "Berg": "Mountain",
+    "Meer": "Sea"
 }
 
 // Dictionary for Collection of Verbs
@@ -70,7 +77,17 @@ const adjectives = {
     "Teuer": "Expensive",
     "Billig": "Cheap",
     "Heiß": "Hot",
-    "Einfach": "Easy"
+    "Einfach": "Easy",
+    "Schwarz": "Black",
+    "Weiß": "White",
+    "Blau": "Blue",
+    "Rosa": "Pink",
+    "Lila": "Purple",
+    "Rot": "Red",
+    "Gelb": "Yellow",
+    "Grün": "Green",
+    "Braun": "Brown",
+    "Silber": "Silver"
 }
 
 // Dictionary for Collection of Food / Drinking Items
@@ -131,7 +148,9 @@ const phrases = {
     "Ich möchte ... kaufen": "I would like to buy ...",
     "Kann ich bar bezahlen?": "Can I pay with Cash?",
     "Kann ich mit Kreditkarte bezahlen?": "Can I pay with Credit Card?",
-    "Guten Appetit!": "Enjoy Your Meal!"
+    "Guten Appetit!": "Enjoy Your Meal!",
+    "Gute Besser!": "Feel Better!",
+    "Alles Gute!": "Take Care!"
 }
 
 // HTML Elements
