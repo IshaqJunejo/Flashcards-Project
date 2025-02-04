@@ -20,8 +20,8 @@ I personally use this project to practice German, but it can be used to practice
 
 ### Screenshots
 
-!["An Screenshot of the Webpage"](images/frankreich.jpg)
+!["An Screenshot of the Webpage"](Images/frankreich.jpg)
 
-!["An Screenshot of the Webpage"](images/schwimmen.jpg)
+!["An Screenshot of the Webpage"](Images/schwimmen.jpg)
 
-!["An Screenshot of the Webpage"](images/verstehen-sie.jpg)
+!["An Screenshot of the Webpage"](Images/verstehen-sie.jpg)
